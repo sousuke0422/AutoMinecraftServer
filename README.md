@@ -24,6 +24,10 @@ electron-packager . ams `
   --win32metadata.ProductName="Auto Minecraft Server" `
   --app-copyright="Copyright 2018 Xperd. Rights Reserved"
 ``` 
+一行にまとめたやつ
+```
+electron-packager . ams --platform="linux,win32" --arch="ia32,x64,armv7l" --electron-version=1.8.2 --overwrite --asar --icon=".\favicon.ico" --win32metadata.CompanyName="Xperd" --win32metadata.FileDescription="Auto Minecraft Server" --win32metadata.OriginalFilename="ams.exe" --win32metadata.ProductName="Auto Minecraft Server" --app-copyright="Copyright 2018 Xperd. Rights Reserved"
+```
 
 Windows版はこれに加えGruntによるコンパイルをしています。  
 ```javascript:Gruntfile.js
